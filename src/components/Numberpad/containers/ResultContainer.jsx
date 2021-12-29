@@ -2,6 +2,6 @@ import React from "react";
 import Result from "../Result";
 
 const ResultContainer = ({ phoneNumber }) => {
-  return <Result phoneNumber={phoneNumber} />;
+  return console.log(1111);
 };
 export default ResultContainer;
