@@ -2,16 +2,16 @@ import './App.css';
 import React from 'react';
 import NumberpadContainer from './components/Numberpad/containers/NumberpadContainer';
 import ResultContainer from './components/Numberpad/containers/ResultContainer';
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" exact  element={<NumberpadContainer />} />
-        <Route path="/result/:phoneNumber" exact element={<ResultContainer />}/>
-      </Routes>
+      <Switch>
+        <Route path="/" exact  component={NumberpadContainer} />
+        <Route path="/result/:phoneNumber" exact component={ResultContainer}/>
+      </Switch>
     </Router>
   );
 }

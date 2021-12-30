@@ -1,20 +1,16 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 1em;
 }
-
 .wrap {
   margin: 100px auto;
   width: 450px;
 }
-
 .container {
   width: 100%;
 }
-
 .view-box {
   height: 150px;
   line-height: 150px;
@@ -23,11 +19,9 @@
   border: 1px solid #aaa;
   background-color: #fff;
 }
-
 .pad {
   border: 3px solid #ddd;
 }
-
 button {
   width: 148px;
   height: 100px;
@@ -35,12 +29,9 @@ button {
   background-color: #fff;
   line-height: 60px;
 }
-
 #submit-btn {
   margin-top: 30px;
 }
-
 .active-btn {
   background-color: orange;
 }
-/*# sourceMappingURL=index.css.map */

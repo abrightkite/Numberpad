@@ -1,7 +1,7 @@
 import React from "react";
-import Result from "../Result";
 
-const ResultContainer = ({ phoneNumber }) => {
-  return console.log(1111);
+const ResultContainer = (props) => {
+  const phoneNumber = props.location?.state?.phoneNumber;
+  return <h1>{phoneNumber || "error"}</h1>;
 };
 export default ResultContainer;

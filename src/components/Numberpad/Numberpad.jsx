@@ -18,7 +18,7 @@ const Numberpad = ({
   return (
     <div className="wrap">
       <div className="container">
-        <input className="view-box" type="text" value={phoneNumber} />
+        <input className="view-box" type="text" defaultValue={phoneNumber} />
         <div className="pad">
           <button onClick={(e) => onButtonPressed(1)}>1</button>
           <button onClick={(e) => onButtonPressed(2)}>2</button>
@@ -37,6 +37,7 @@ const Numberpad = ({
       <Link
         to={{
           pathname: "/result/:phoneNumber",
+          state: { phoneNumber },
         }}
       >
         <button
